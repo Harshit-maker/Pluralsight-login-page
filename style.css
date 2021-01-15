@@ -1,0 +1,165 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Arial' , sans-serif;
+	background: black;
+	color: white;
+	overflow: hidden;
+}
+a{
+	text-decoration: none;
+}
+#wrapper{
+	display: flex;
+	flex-direction: row;
+
+}
+#left{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #1a1a1a;
+}
+#right{
+	flex: 1;
+}
+#signin{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	padding: 16px;
+}
+#signin form{
+	width: 80%;
+	padding-bottom:50px; 
+}
+.logo{
+	margin-bottom: 8vh;
+}
+#signin label{
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 500px;
+}
+.text-input{
+	margin-bottom: 1.3rem;
+	width: 100%;
+	border-radius: 2px;
+	background: #1a1a1a;
+	border: 1px solid #555;
+    color: white;
+    padding: 8px 16px;
+    line-height: 20px;
+}
+
+.primary-button{
+	padding: 14px 16px;
+	height: 2.7rem;
+	display: block;
+	border-radius: 2px;
+	border:0;
+	background: #33adff;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.5s;
+	width: 100%
+}
+.primary-button:hover{
+	background: slateblue;
+}
+.secondary-button{
+	color: #fff;
+	padding: 14px 16px;
+	height: 2.7rem;
+	display: block;
+	border-radius: 2px;
+	border:0;
+	background: #404040;
+	text-decoration: none;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.5s;
+	width: 80%;
+}
+.secondary-button:hover{
+	background: ;
+}
+.secondary-button a{
+	color: #fff;
+}
+.links{
+	width: 60%;
+}
+#signin .links a{
+	display: block;
+	color:#33adff;
+	text-decoration: none;
+	margin-bottom: 1rem;
+	text-align: center;
+	justify-content: center;
+	font-size: 13px;
+}
+#showcase{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#showcase .showcase-content{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	margin-top: 4.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 2.5rem;
+}
+#showcase .showcase-content .skill{
+	 background: -webkit-linear-gradient(#ffccff, #ff9999);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+#main-footer{
+	color: #ccc;
+	text-align: center;
+	font-size: 14px;
+	max-width: 80%;
+	padding-top: 5rem;
+}
+#main-footer a{
+	text-decoration: underline;
+	color: #ccc;
+}
+#main-footer a:hover{
+	color:#33adff;
+}
+@media (min-width: 1200px){
+	#right{
+		flex:6;
+	}
+	#left{
+		flex:4.5;
+	}
+
+}
+@media (max-width: 768px){
+	body{
+		overflow: auto;
+	}
+	#right, #showcase{
+		display: none;
+	}
+	#left{
+		justify-content: start;
+	}
+
+}
